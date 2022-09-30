@@ -1,0 +1,26 @@
+public class Main {
+    public static void main(String[] args) {
+        int x, y, z, resultado;
+        x=1;
+        y=2;
+        z=3;
+        resultado = mult(x, y, z);
+        System.out.println(resultado);
+        coche miCoche = new coche();
+        miCoche.aumentarpuerta(1);
+    }
+
+    public static int mult(int a, int b, int c){
+        return a*b*c;
+    }
+}
+
+class coche{
+    public int puertas=2;
+
+    public void aumentarpuerta(int num){
+        puertas=puertas+num;
+        System.out.println(puertas);
+    }
+
+}
