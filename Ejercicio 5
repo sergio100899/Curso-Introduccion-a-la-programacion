@@ -1,0 +1,7 @@
+def bisiesto(fecha):
+    if (fecha%4) == 0:
+        print("El año " + str(fecha) + " es bisiesto")
+    else:
+        print("El año " + str(fecha) + " no es bisiesto")
+
+bisiesto(2016)
