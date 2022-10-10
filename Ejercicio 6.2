@@ -1,0 +1,20 @@
+class Alumno:
+    
+    def __init__(self,nombre=None,notas=None):
+        self.nombre = nombre
+        self.notas = notas
+        
+    def imprimir(self):
+        print(self.nombre)
+        print(self.notas)
+        
+    def aprobar(self):
+        if self.nota >= 11:
+            print("Su nota es " + self.nota + " y ha aprobado")
+        else:
+            print("Su nota es " + self.nota + " y ha desaprobado")
+
+
+
+persona = Alumno("Pepe",13)
+persona.imprimir()
